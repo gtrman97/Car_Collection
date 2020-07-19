@@ -18,6 +18,7 @@ class Car{
     private:
         string make;
         string model; 
+        string vin; 
         int year; 
 };
 
