@@ -5,7 +5,7 @@ Car::Car(){
     setModel("");
     setYear(0);
 }
-Car::Car(string _make, string _model, string vin, int _year){
+Car::Car(string _make, string _model, string _vin, int _year){
     setMake(_make);
     setModel(_model);
     setVin(_vin); 
