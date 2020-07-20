@@ -26,7 +26,7 @@ string Car::getModel(){
 void Car::setVin(string _vin){
     vin = _vin; 
 }
-string getVin(){
+string Car::getVin(){
     return vin; 
 }
 void Car::setYear(int _year){
