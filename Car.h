@@ -7,7 +7,7 @@ using std::string;
 class Car{
     public:
         Car();
-        Car(string _make, string _model, int year); 
+        Car(string _make, string _model, string vin, int year); 
         //~Car();
         void setMake(string _make);
         string getMake();
