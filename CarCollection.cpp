@@ -20,8 +20,7 @@ CarCollection::displayCar(string _vin){
         loopPtr = loopPtr->next; 
     }
     if(loopPtr == nullptr){
-        Car dummyCar("", "", "", -1);
-        return dummyCar; 
+        return "Car not found"; 
     }
 
 }
