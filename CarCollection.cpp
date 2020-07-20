@@ -21,6 +21,9 @@ CarCollection::displayCar(string _vin){
     }
     if(loopPtr == nullptr){
         return "Car not found"; 
+    } else {
+        string display =  loopPtr->CarData; 
+        return display; 
     }
 
 }
