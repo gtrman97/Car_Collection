@@ -13,7 +13,16 @@ CarCollection::addCar(Car newCar){
     headPtr = NewNode; 
 
 }
-CarCollection::displayCar(string vin){
+CarCollection::displayCar(string _vin){
+
+    CarNode * loopPtr = headPtr;
+    while(loopPtr != nullptr && loopPtr->CarData.getVin() != _vin){
+        loopPtr = loopPtr->next; 
+    }
+    if(loopPtr == nullptr){
+        Car dummyCar("", "", "", -1);
+        return dummyCar; 
+    }
 
 }
 CarCollection::removeCar(string vin){
