@@ -13,6 +13,8 @@ class Car{
         string getMake();
         void setModel(string _model);
         string getModel();
+        void setVin(string _vin);
+        string getVin(); 
         void setYear(int _year);
         int getYear();
     private:
