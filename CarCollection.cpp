@@ -5,7 +5,7 @@ CarCollection::CarCollection(){
     headPtr = nullptr; 
 
 }
-CarCollection::addCar(Car newCar){
+void CarCollection::addCar(Car newCar){
 
     CarNode * NewNode = new CarNode; 
     NewNode->CarData = newCar; 
@@ -13,7 +13,7 @@ CarCollection::addCar(Car newCar){
     headPtr = NewNode; 
 
 }
-CarCollection::displayCar(string _vin){
+string CarCollection::displayCar(string _vin){
 
     CarNode * loopPtr = headPtr;
     while(loopPtr != nullptr && loopPtr->CarData.getVin() != _vin){
@@ -22,11 +22,11 @@ CarCollection::displayCar(string _vin){
     if(loopPtr == nullptr){
         return "Car not found"; 
     } else {
-        string display =  loopPtr->CarData; 
+        string display =  std::to_string(loopPtr->CarData.getYear()); 
         return display; 
     }
 
 }
-CarCollection::removeCar(string vin){
+void CarCollection::removeCar(string vin){
 
 }
