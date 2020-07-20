@@ -13,7 +13,7 @@ class CarCollection{
     public:
         CarCollection();
         void addCar(Car newCar);
-        string displayRecord(string vin); 
-        void removeRecord(string vin); 
+        string displayCar(string vin); 
+        void removeCar(string vin); 
 };
 #endif
