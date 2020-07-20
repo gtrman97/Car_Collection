@@ -15,5 +15,8 @@ class CarCollection{
         void addCar(Car newCar);
         string displayCar(string vin); 
         void removeCar(string vin); 
+    private:
+        typedef CarNode * CarList;
+        CarList headPtr; 
 };
 #endif
